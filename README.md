@@ -94,5 +94,24 @@ ex -  if app folder metadata have less precedence than reciews folder matadata f
   ## search for one level down 
 
 
-  # One is for parallel and intercepting Route Both
+  # One is for parallel and intercepting Route Both and we can use them to display many routes simontaneously
+
+  # Route Handlers (comments)
+    Route handlers give custom request handler for given file
+    FOR HANDLING (DELETE , POST , GET , PATCH) request
+    First make a async function 
+    '''export async function function_name ''' 
+    as a parameter request and params.
+    Then get the value from request and params 
+    '''await request.json();''' 
+
+  ## Redirect 
+     Used when you have to redirect to certain page after checking or perfroming certain operations
+
+  ## Headers(profile/api/route.js)
+  ## Cookie(profile/api/route.js) 
+     Set-Cookie -> For setting the cookie
+     request.cookies.get("cookie_name") -> for getting the cookie
+  ## Caching
+  ## Middleware
   
